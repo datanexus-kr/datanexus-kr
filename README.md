@@ -16,3 +16,11 @@ Here are some ideas to get you started:
 -->
 
 <img width="100%" src="https://raw.githubusercontent.com/datanexus-kr/datanexus-kr/main/cards/ai-usage-full.svg" alt="AI usage" />
+
+### 사용량 노트 <sub>2026-07-16 기준</sub>
+
+4월 중순부터 석 달 동안 AI 코딩 CLI로 5.9B 토큰을 태웠다. API 정가로 환산하면 $9,351인데 대부분 캐시에서 읽은 토큰이라 실제 결제액이 아니라 환산치다.
+
+툴별로는 Codex가 $6,409로 제일 많고 Claude Code가 그 절반쯤 된다. Gemini는 써본 수준. 모델로 좁히면 gpt-5.5와 claude-opus-4-8 두 개가 비용 대부분을 가져갔다.
+
+흐름이 더 재미있는데 전체 비용의 3분의 2가 최근 한 달에 몰려 있다. 하루 최고 기록은 5월 중순의 $699. 쓰는 양이 줄어들 기미는 없다.
