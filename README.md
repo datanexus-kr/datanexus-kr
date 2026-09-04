@@ -17,10 +17,10 @@ Here are some ideas to get you started:
 
 <img width="100%" src="https://raw.githubusercontent.com/datanexus-kr/datanexus-kr/main/cards/ai-usage-full.svg" alt="AI usage" />
 
-### 사용량 노트 <sub>2026-09-03 기준</sub>
+### 사용량 노트 <sub>2026-09-05 기준</sub>
 
-4월 중순부터 다섯 달 동안 AI 코딩 도구로 6.6B 토큰을 태웠다. API 정가로 환산하면 $9,635인데 94.6%가 캐시에서 읽은 토큰이라 실제 결제액이 아니라 환산치다.
+4월 중순부터 다섯 달 동안 AI 코딩 도구로 6.6B 토큰을 태웠다. API 정가로 환산하면 $9,654인데 94.6%가 캐시에서 읽은 토큰이라 실제 결제액이 아니라 환산치다.
 
-툴별로는 Codex $6,966, Claude Code $2,668 순이고 Gemini는 써본 수준이다. 모델로 좁히면 gpt-5.5 하나가 $4,636으로 절반 가까이 가져간다. Claude 쪽은 claude-fable-5가 $1,132까지 올라왔다.
+툴별로는 Codex $6,981, Claude Code $2,672 순이고 Gemini는 써본 수준이다. 모델로 좁히면 gpt-5.5 하나가 $4,636으로 절반 가까이 가져간다. Claude 쪽은 claude-fable-5가 $1,132까지 올라왔다.
 
-7월이 $3,817로 월 최고였고 8월은 $1,967로 꺾였다. 하루 최고 기록은 5월 중순의 $516. 최근 30일만 떼어 보면 Claude Code $1,054, Codex $878로 순서가 뒤집혔다.
+7월이 $3,817로 월 최고였고 8월은 $1,967로 꺾였다. 하루 최고 기록은 5월 중순의 $516. 최근 30일만 떼어 보면 Claude Code $1,054, Codex $891로 순서가 뒤집혔다.
