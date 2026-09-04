@@ -28,10 +28,8 @@ Here are some ideas to get you started:
 
 #### 비용 인사이트
 
-전체 토큰의 94.6%가 캐시 읽기였다는 점은 긴 컨텍스트를 반복해 실어 나르는 작업 패턴을 짐작하게 하지만 그 자체로 비용이 잘 통제됐다는 뜻은 아니다. [엔터프라이즈 AI 에이전트 비용 통제](https://datanexus-kr.github.io/curations/2026-09/2026-09-04-enterprise-ai-agent-llm-cost-control/)는 비용을 반복되는 기본 입력, 누적 컨텍스트, 호출 수로 나눠 따로 재라고 설명한다. 이 집계에는 호출 수와 세션 정보가 없으니 다음 기록에서는 세션당 턴 수와 캐시 기록 토큰을 함께 남겨 캐시 비중이 어느 변수에서 나오는지 확인해야겠다.
+1. 같은 내용을 얼마나 반복해서 보내는지 볼 만하다. 캐시 읽기는 전에 보낸 내용을 다시 사용한 토큰인데 전체의 94.6%다. [비용 통제 글](https://datanexus-kr.github.io/curations/2026-09/2026-09-04-enterprise-ai-agent-llm-cost-control/)처럼 도구 설명과 쌓인 대화 기록을 나눠 보면 줄일 대상이 보인다.
 
-모델 단위로 보면 gpt-5.5 하나가 $4,637의 환산 비용을 차지했는데 무거운 작업을 몰아준 결과인지 단순 조회까지 같은 모델로 처리한 결과인지는 이 집계만으로 갈라낼 수 없다. [우버의 소프트웨어 팩토리 운영 전략](https://datanexus-kr.github.io/curations/2026-09/2026-09-02-efficient-software-factory-uber-scale/)은 실제 작업 기반 벤치마크로 워크로드에 맞는 모델을 고르고 서브에이전트 기본값을 따로 지정하는 방식을 소개한다. 작업 유형 태그를 붙여 기록하면 어떤 성격의 요청이 상위 모델에 몰렸는지 구분해 볼 수 있다.
-
-최근 30일은 Claude Code $1,054, Codex $901로 앞선 다섯 달의 순서가 뒤집혔지만 어느 도구가 더 경제적이라 말하기는 어렵다. [Claude Code 토큰 사용량 측정 가이드](https://datanexus-kr.github.io/curations/2026-09/2026-09-04-claude-code-token-optimization-guide/)는 연결한 MCP 도구 정의가 매 프롬프트에 실려 기본 컨텍스트를 키운다고 짚는다. 도구를 바꾼 시점, 활성화한 MCP 목록, 세션 길이를 함께 적어두면 이 역전이 작업 이동 때문인지 설정 차이 때문인지 다음 비교에서 가려낼 수 있다.
+2. 모델은 작업에 맞춰 나눠 쓸 만하다. [우버 사례](https://datanexus-kr.github.io/curations/2026-09/2026-09-02-efficient-software-factory-uber-scale/)에서는 실제 작업으로 모델의 결과와 비용을 비교한다. 내 기록에도 작업 종류를 남겨두면 어떤 모델이 맞는지 비교할 수 있다.
 <!-- usage-note:end -->
 
