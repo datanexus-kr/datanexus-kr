@@ -18,18 +18,20 @@ Here are some ideas to get you started:
 <img width="100%" src="https://raw.githubusercontent.com/datanexus-kr/datanexus-kr/main/cards/ai-usage-full.svg" alt="AI usage" />
 
 <!-- usage-note:start -->
-### 사용량 노트 <sub>2026-09-11 기준</sub>
+### 사용량 노트 <sub>2026-09-15 기준</sub>
 
-4월 중순부터 다섯 달 동안 AI 코딩 도구로 8.0B 토큰을 태웠다. API 정가로 환산한 비용은 $11,595로 실제 결제액과는 다르다. 전체 토큰의 94.5%를 캐시에서 읽었다.
+4월 중순부터 다섯 달 동안 AI 코딩 도구로 8.7B 토큰을 태웠다. API 정가로 환산한 비용은 $12,555로 실제 결제액과는 다르다. 전체 토큰의 94.6%를 캐시에서 읽었다.
 
-툴별로는 Codex $7,792, Claude Code $3,802 순이고 Gemini는 써본 수준이다. 모델로 좁히면 gpt-5.5 하나가 $4,724으로 절반 가까이 가져간다. Claude 쪽은 claude-opus-5가 $1,328까지 올라왔다.
+툴별로는 Codex $9,027, Claude Code $3,527 순이고 Gemini는 써본 수준이다. 모델로 좁히면 gpt-5.5 하나가 $4,794으로 가장 많이 가져간다. Claude 쪽은 claude-opus-5가 $1,357까지 올라왔다.
 
-7월이 $3,817로 월 최고였고 8월은 $1,967로 꺾였다. 하루 최고 기록은 9월초의 $1,049이다. 최근 30일만 떼어 보면 Claude Code $1,866, Codex $1,544로 순서가 뒤집혔다.
+7월이 $3,817로 월 최고였고 8월은 $1,967로 꺾였다. 하루 최고 기록은 9월초의 $1,049이다. 최근 30일만 떼어 보면 Codex $2,605, Claude Code $1,083로 순서가 그대로다.
 
 #### 비용 인사이트
 
-1. 같은 내용을 얼마나 반복해서 보내는지 볼 필요가 있다. 캐시 읽기는 전에 보낸 내용을 다시 사용한 토큰으로 전체의 94.5%다. [관련 큐레이션](https://datanexus-kr.github.io/curations/2026-09/2026-09-04-enterprise-ai-agent-llm-cost-control/)은 큰 조회 결과를 남겨두면 호출마다 다시 전송된다고 짚는다.
+1. 작업별로 모델을 나눠 쓸 수 있다. [우버 사례](https://datanexus-kr.github.io/curations/2026-09/2026-09-02-efficient-software-factory-uber-scale/)는 실제 작업으로 성능과 비용을 비교해 가벼운 작업에 가벼운 모델을 기본값으로 둔다. 내 기록에도 작업 종류를 남기면 같은 비교를 해볼 수 있다.
 
-2. 모델을 작업 종류에 맞춰 나눠 쓸 만하다. gpt-5.5 하나가 $4,724로 절반에 가깝다. [관련 큐레이션](https://datanexus-kr.github.io/curations/2026-09/2026-09-02-efficient-software-factory-uber-scale/)은 복잡한 추론이 필요 없는 작업에 가벼운 모델을 기본으로 두는데 내 기록에도 작업 종류를 남기면 비교해볼 수 있다.
+2. 같은 내용을 얼마나 다시 보내는지 볼 필요가 있다. [에이전트 비용 글](https://datanexus-kr.github.io/curations/2026-09/2026-09-04-enterprise-ai-agent-llm-cost-control/)은 매 호출마다 들어가는 기본 입력과 쌓인 대화를 따로 재보라고 짚는다. 캐시 읽기 94.6%는 전체 비율이지 호출별 절감률은 아니다.
+
+3. 연결해둔 도구도 입력을 늘린다. [Claude Code 가이드](https://datanexus-kr.github.io/curations/2026-09/2026-09-04-claude-code-token-optimization-guide/)는 도구 설명이 매 프롬프트에 같이 실린다고 알려준다. 안 쓰는 연결이 켜져 있는지 점검해볼 만하다.
 <!-- usage-note:end -->
 
