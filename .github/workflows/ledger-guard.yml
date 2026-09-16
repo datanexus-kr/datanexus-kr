@@ -1,0 +1,63 @@
+# Rejects a push that shrinks a device ledger.
+#
+# The AI usage cards are generated on several Macs and pushed straight to main.
+# The ledger under cards/devices/ is a high-water mark: each day's numbers only
+# ever grow, because the local CLI logs they come from get pruned and an older
+# generator revision that re-reads them would otherwise publish a shorter
+# history. That happened on 2026-09-15 and 2026-09-16, silently cutting the
+# ALL-TIME total roughly in half.
+#
+# This cannot block the push itself — the generators push to main directly —
+# so it fails loudly and leaves a commit comment naming what was lost. The
+# hourly watchdog on the main Mac is what actually restores the numbers.
+name: ledger guard
+
+on:
+  push:
+    branches: [main]
+    paths: ['cards/devices/*.json']
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Compare each device ledger against its previous version
+        run: |
+          node --input-type=module -e '
+          import { execSync } from "node:child_process";
+          const show = (ref, path) => {
+            try { return JSON.parse(execSync(`git show ${ref}:${path}`, { encoding: "utf8" })); }
+            catch { return null; }
+          };
+          const changed = execSync("git diff --name-only HEAD^ HEAD -- cards/devices/", { encoding: "utf8" })
+            .split("\n").filter(Boolean);
+          const problems = [];
+          for (const path of changed) {
+            const before = show("HEAD^", path), after = show("HEAD", path);
+            if (!before || !after) continue;
+            const days = (s) => (s.daily || []).length;
+            const checks = [
+              ["schema version", before.version ?? 1, after.version ?? 1],
+              ["days", days(before), days(after)],
+              ["tokens", before.totals?.totalTokens ?? 0, after.totals?.totalTokens ?? 0],
+              ["cost", Math.round(before.totals?.totalCost ?? 0), Math.round(after.totals?.totalCost ?? 0)],
+            ].filter(([, was, now]) => now < was);
+            if (checks.length)
+              problems.push(`${path}: ${checks.map(([k, was, now]) => `${k} ${was} -> ${now}`).join(", ")}`);
+          }
+          if (problems.length) {
+            console.error("Ledger regressed:\n  " + problems.join("\n  "));
+            console.error("\nA high-water ledger must never shrink. This usually means an older");
+            console.error("generator revision republished from pruned local logs. Re-run the");
+            console.error("generator on the Mac that holds the full archive to restore it.");
+            process.exit(1);
+          }
+          console.log("ok — no device ledger lost ground");
+          '
