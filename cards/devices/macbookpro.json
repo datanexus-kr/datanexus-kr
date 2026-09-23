@@ -1,14 +1,14 @@
 {
   "version": 2,
   "device": "macbookpro",
-  "updatedAt": "2026-09-22T00:40:24.749Z",
+  "updatedAt": "2026-09-23T00:40:23.695Z",
   "totals": {
-    "totalTokens": 12279511935,
-    "inputTokens": 409214401,
-    "outputTokens": 65549582,
-    "cacheCreationTokens": 169563808,
-    "cacheReadTokens": 11636431502,
-    "totalCost": 17634.283432889995
+    "totalTokens": 12448285022,
+    "inputTokens": 415479127,
+    "outputTokens": 66075002,
+    "cacheCreationTokens": 170297802,
+    "cacheReadTokens": 11797680449,
+    "totalCost": 17838.719194329995
   },
   "daily": [
     {
@@ -5217,21 +5217,21 @@
     },
     {
       "period": "2026-09-22",
-      "totalTokens": 46735212,
-      "inputTokens": 2340265,
-      "outputTokens": 149059,
-      "cacheCreationTokens": 0,
-      "cacheReadTokens": 44245888,
-      "totalCost": 58.6242616,
+      "totalTokens": 198473420,
+      "inputTokens": 7811935,
+      "outputTokens": 647696,
+      "cacheCreationTokens": 733994,
+      "cacheReadTokens": 189279795,
+      "totalCost": 240.67295964000002,
       "modelBreakdowns": [
         {
           "modelName": "gpt-6-astra",
-          "cost": 56.096334,
+          "cost": 195.95864600000002,
           "totalTokens": 0,
-          "inputTokens": 1562678,
-          "outputTokens": 134465,
+          "inputTokens": 6243852,
+          "outputTokens": 394327,
           "cacheCreationTokens": 0,
-          "cacheReadTokens": 33746304,
+          "cacheReadTokens": 113803776,
           "totalCost": 0
         },
         {
@@ -5246,12 +5246,73 @@
         },
         {
           "modelName": "gpt-5.6-luna",
-          "cost": 0.268546,
+          "cost": 0.5208434399999999,
           "totalTokens": 0,
-          "inputTokens": 529682,
-          "outputTokens": 7060,
+          "inputTokens": 1319770,
+          "outputTokens": 16498,
           "cacheCreationTokens": 0,
-          "cacheReadTokens": 7706880,
+          "cacheReadTokens": 11854592,
+          "totalCost": 0
+        },
+        {
+          "modelName": "claude-opus-5",
+          "cost": 41.05346,
+          "totalTokens": 0,
+          "inputTokens": 388,
+          "outputTokens": 223502,
+          "cacheCreationTokens": 535560,
+          "cacheReadTokens": 60216740,
+          "totalCost": 0
+        },
+        {
+          "modelName": "claude-sonnet-5",
+          "cost": 0.8806286000000001,
+          "totalTokens": 0,
+          "inputTokens": 20,
+          "outputTokens": 5835,
+          "cacheCreationTokens": 198434,
+          "cacheReadTokens": 611983,
+          "totalCost": 0
+        }
+      ]
+    },
+    {
+      "period": "2026-09-23",
+      "totalTokens": 17034879,
+      "inputTokens": 793056,
+      "outputTokens": 26783,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 16215040,
+      "totalCost": 22.387063400000002,
+      "modelBreakdowns": [
+        {
+          "modelName": "gpt-6-astra",
+          "cost": 21.101194000000003,
+          "totalTokens": 0,
+          "inputTokens": 545602,
+          "outputTokens": 19763,
+          "cacheCreationTokens": 0,
+          "cacheReadTokens": 14657024,
+          "totalCost": 0
+        },
+        {
+          "modelName": "gpt-5.6-sol",
+          "cost": 1.2610303999999999,
+          "totalTokens": 0,
+          "inputTokens": 145969,
+          "outputTokens": 5923,
+          "cacheCreationTokens": 0,
+          "cacheReadTokens": 1396736,
+          "totalCost": 0
+        },
+        {
+          "modelName": "gpt-5.6-luna",
+          "cost": 0.024838999999999996,
+          "totalTokens": 0,
+          "inputTokens": 101485,
+          "outputTokens": 1097,
+          "cacheCreationTokens": 0,
+          "cacheReadTokens": 161280,
           "totalCost": 0
         }
       ]
@@ -5311,7 +5372,8 @@
       "2026-09-19": 177.55941772,
       "2026-09-20": 1068.0221032,
       "2026-09-21": 1014.2014039600001,
-      "2026-09-22": 58.6242616
+      "2026-09-22": 198.73887104000002,
+      "2026-09-23": 22.387063400000002
     },
     "Gemini": {},
     "Copilot": {}
