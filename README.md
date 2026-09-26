@@ -20,16 +20,16 @@ Here are some ideas to get you started:
 <!-- usage-note:start -->
 ### 사용량 노트 <sub>2026-09-26 기준</sub>
 
-4월 중순부터 다섯 달 동안 AI 코딩 도구로 13.6B 토큰을 태웠다. API 정가로 환산한 비용은 $18,446로 실제 결제액과는 다르다. 전체 토큰의 94.9%를 캐시에서 읽었다.
+4월 중순부터 다섯 달 동안 AI 코딩 도구로 136억 토큰을 썼다. API 정가로 환산한 비용은 $18,446 (₩24,994,690)으로, 정액 구독(Claude Max 등) 요금제라면 실제 결제액은 이보다 적다. 전체 토큰의 94.9%를 캐시에서 읽었다.
 
-툴별로는 Codex $13,296, Claude Code $5,148 순이고 Gemini는 써본 수준이다. 모델로 좁히면 gpt-6-astra 하나가 $6,003으로 가장 많이 가져간다. Claude 쪽은 claude-opus-5가 $1,831까지 올라왔다.
+도구별로는 Codex $13,296 (₩18,017,298), Claude Code $5,148 (₩6,975,519) 순으로 Codex가 Claude Code의 2.6배다. Gemini는 약 $1 (₩1,873)이다. 모델별로는 gpt-6-astra가 $6,003 (₩8,134,723)으로 가장 많다. Claude 쪽은 claude-opus-5가 $1,831 (₩2,481,711)이다.
 
-9월이 $8,712로 월 최고였고 8월은 $2,163로 꺾였다. 하루 최고 기록은 9월 중순의 $1,339이다. 최근 30일만 떼어 보면 Codex $6,187, Claude Code $2,553로 순서가 그대로다.
+월별로는 8월은 $2,163 (₩2,930,871)였다. 9월(26일까지)은 $8,712 (₩11,804,695)로 가장 많다. 하루 최고 기록은 9월 20일의 $1,339 (₩1,858,259)이다. 최근 30일 기준으로도 Codex $6,187 (₩8,383,795), Claude Code $2,553 (₩3,458,851)으로 도구별 순위는 동일하다.
 
-#### 비용 인사이트
+#### 참고
 
-1. 캐시 읽기 비중이 94.9%로 가장 높다. 캐시 읽기는 전에 보낸 내용을 다시 사용한 토큰이다. 캐시 읽기 비용이 어떻게 계산되는지는 [큐레이션](https://datanexus-kr.github.io/curations/2026-09/2026-09-04-claude-code-token-optimization-guide/)에 정리돼 있다.
+1. 모델 배분을 나눠 볼 만하다. [소프트웨어 팩토리 비용](https://datanexus-kr.github.io/curations/2026-09/2026-09-02-efficient-software-factory-uber-scale/)에 따르면 작업 종류별로 실제 결과를 비교해 어떤 모델이 맞는지 판단할 수 있다.
 
-2. Codex와 Claude Code의 환산 비용 차이가 크다. [큐레이션](https://datanexus-kr.github.io/curations/2026-09/2026-09-02-efficient-software-factory-uber-scale/)은 비용을 사용자·세션·토큰·모델 가격 등 여러 변수로 나눠 측정해야 원인을 알 수 있다고 짚는다.
+2. 컨텍스트 정리 습관을 점검할 필요가 있다. [Claude Code 토큰 최적화](https://datanexus-kr.github.io/curations/2026-09/2026-09-04-claude-code-token-optimization-guide/)에 따르면 모델에 함께 보내는 대화 이력을 주기적으로 압축하면 비용을 낮출 수 있다.
 <!-- usage-note:end -->
 
