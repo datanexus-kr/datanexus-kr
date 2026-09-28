@@ -14,10 +14,10 @@
 <rect width="422" height="194" x="0.5" y="0.5" rx="4.5" fill="#000000" stroke="#262626" stroke-width="1"/>
 <text x="30" y="34" class="t fade">&#9889; AI Usage</text>
 <text x="393" y="34" text-anchor="end" class="user fade">@datanexus-kr</text>
-<text x="393" y="49" text-anchor="end" class="foot fade">API-equivalent &#183; 2026-09-27</text>
+<text x="393" y="49" text-anchor="end" class="foot fade">API-equivalent &#183; 2026-09-28</text>
 <line x1="200" y1="60" x2="200" y2="175" stroke="#262626" stroke-width="1"/>
 <g class="fade" style="animation-delay:150ms"><text x="30" y="74" class="hdr">ALL-TIME</text>
-<text x="30" y="140" class="big">13.7B</text>
-<text x="30" y="165" class="sub">tokens &#183; 94.9% cache-hit</text></g>
-<g class="fade" style="animation-delay:300ms"><text x="222" y="74" class="hdr">COST</text><text x="222" y="98" class="lbl">USD</text><text x="393" y="98" text-anchor="end" class="val">$ 18,558</text><text x="222" y="123" class="lbl">KRW</text><text x="393" y="123" text-anchor="end" class="val">₩ 25,183,527</text><text x="222" y="148" class="lbl">EUR</text><text x="393" y="148" text-anchor="end" class="val">€ 16,284</text><text x="222" y="173" class="lbl">CNY</text><text x="393" y="173" text-anchor="end" class="val">¥ 124,875</text></g>
+<text x="30" y="140" class="big">14.2B</text>
+<text x="30" y="165" class="sub">tokens &#183; 95.0% cache-hit</text></g>
+<g class="fade" style="animation-delay:300ms"><text x="222" y="74" class="hdr">COST</text><text x="222" y="98" class="lbl">USD</text><text x="393" y="98" text-anchor="end" class="val">$ 18,783</text><text x="222" y="123" class="lbl">KRW</text><text x="393" y="123" text-anchor="end" class="val">₩ 25,470,396</text><text x="222" y="148" class="lbl">EUR</text><text x="393" y="148" text-anchor="end" class="val">€ 16,498</text><text x="222" y="173" class="lbl">CNY</text><text x="393" y="173" text-anchor="end" class="val">¥ 126,211</text></g>
 </svg>
