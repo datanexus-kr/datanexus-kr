@@ -1,14 +1,14 @@
 {
   "version": 2,
   "device": "macbookpro",
-  "updatedAt": "2026-10-05T00:40:13.527Z",
+  "updatedAt": "2026-10-06T00:40:15.009Z",
   "totals": {
-    "totalTokens": 15306357501,
-    "inputTokens": 448675901,
-    "outputTokens": 74698872,
-    "cacheCreationTokens": 229805617,
-    "cacheReadTokens": 14554377177,
-    "totalCost": 19524.953172569993
+    "totalTokens": 15374108789,
+    "inputTokens": 451818822,
+    "outputTokens": 75081586,
+    "cacheCreationTokens": 230968464,
+    "cacheReadTokens": 14617439983,
+    "totalCost": 19555.42016448999
   },
   "daily": [
     {
@@ -6070,12 +6070,12 @@
     },
     {
       "period": "2026-10-05",
-      "totalTokens": 8826072,
-      "inputTokens": 695496,
-      "outputTokens": 35344,
-      "cacheCreationTokens": 0,
-      "cacheReadTokens": 8095232,
-      "totalCost": 6.62495676,
+      "totalTokens": 48618699,
+      "inputTokens": 2343425,
+      "outputTokens": 261717,
+      "cacheCreationTokens": 1162847,
+      "cacheReadTokens": 44850710,
+      "totalCost": 25.08079284,
       "modelBreakdowns": [
         {
           "modelName": "gpt-5.6-sol",
@@ -6089,32 +6089,103 @@
         },
         {
           "modelName": "gpt-6-astra",
-          "cost": 2.708542,
+          "cost": 5.547994,
           "totalTokens": 0,
-          "inputTokens": 135602,
-          "outputTokens": 2221,
+          "inputTokens": 405362,
+          "outputTokens": 2539,
           "cacheCreationTokens": 0,
-          "cacheReadTokens": 1241472,
+          "cacheReadTokens": 1367424,
           "totalCost": 0
         },
         {
           "modelName": "gpt-6.1-sol",
-          "cost": 0.9696388,
+          "cost": 8.2070316,
           "totalTokens": 0,
-          "inputTokens": 230385,
-          "outputTokens": 24364,
+          "inputTokens": 1588840,
+          "outputTokens": 186811,
           "cacheCreationTokens": 0,
-          "cacheReadTokens": 2652288,
+          "cacheReadTokens": 31612416,
           "totalCost": 0
         },
         {
           "modelName": "gpt-5.6-luna",
-          "cost": 0.01205436,
+          "cost": 0.016308839999999998,
           "totalTokens": 0,
-          "inputTokens": 48229,
-          "outputTokens": 501,
+          "inputTokens": 67803,
+          "outputTokens": 703,
           "cacheCreationTokens": 0,
-          "cacheReadTokens": 90368,
+          "cacheReadTokens": 95232,
+          "totalCost": 0
+        },
+        {
+          "modelName": "claude-opus-5-5",
+          "cost": 4.6451107999999985,
+          "totalTokens": 0,
+          "inputTokens": 138,
+          "outputTokens": 62399,
+          "cacheCreationTokens": 232959,
+          "cacheReadTokens": 7664534,
+          "totalCost": 0
+        },
+        {
+          "modelName": "claude-sonnet-5-5",
+          "cost": 3.7296259999999997,
+          "totalTokens": 0,
+          "inputTokens": 2,
+          "outputTokens": 1007,
+          "cacheCreationTokens": 929888,
+          "cacheReadTokens": 0,
+          "totalCost": 0
+        }
+      ]
+    },
+    {
+      "period": "2026-10-06",
+      "totalTokens": 27958661,
+      "inputTokens": 1494992,
+      "outputTokens": 156341,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 26307328,
+      "totalCost": 12.01115584,
+      "modelBreakdowns": [
+        {
+          "modelName": "gpt-6.1-sol",
+          "cost": 5.4875396,
+          "totalTokens": 0,
+          "inputTokens": 931995,
+          "outputTokens": 144746,
+          "cacheCreationTokens": 0,
+          "cacheReadTokens": 21760896,
+          "totalCost": 0
+        },
+        {
+          "modelName": "gpt-6-astra",
+          "cost": 4.080344,
+          "totalTokens": 0,
+          "inputTokens": 295559,
+          "outputTokens": 1777,
+          "cacheCreationTokens": 0,
+          "cacheReadTokens": 1035904,
+          "totalCost": 0
+        },
+        {
+          "modelName": "gpt-5.6-sol",
+          "cost": 2.4312384000000002,
+          "totalTokens": 0,
+          "inputTokens": 218284,
+          "outputTokens": 9420,
+          "cacheCreationTokens": 0,
+          "cacheReadTokens": 3424256,
+          "totalCost": 0
+        },
+        {
+          "modelName": "gpt-5.6-luna",
+          "cost": 0.012033839999999999,
+          "totalTokens": 0,
+          "inputTokens": 49154,
+          "outputTokens": 398,
+          "cacheCreationTokens": 0,
+          "cacheReadTokens": 86272,
           "totalCost": 0
         }
       ]
@@ -6187,7 +6258,8 @@
       "2026-10-02": 94.44200964000001,
       "2026-10-03": 28.33318204,
       "2026-10-04": 24.670814799999995,
-      "2026-10-05": 6.62495676
+      "2026-10-05": 16.70605604,
+      "2026-10-06": 12.01115584
     },
     "Gemini": {},
     "Copilot": {}
