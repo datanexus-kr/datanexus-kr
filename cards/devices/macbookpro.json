@@ -1,14 +1,14 @@
 {
   "version": 2,
   "device": "macbookpro",
-  "updatedAt": "2026-10-27T00:40:18.947Z",
+  "updatedAt": "2026-10-28T00:40:18.135Z",
   "totals": {
-    "totalTokens": 20995035182,
-    "inputTokens": 503933340,
-    "outputTokens": 90172883,
-    "cacheCreationTokens": 317838468,
-    "cacheReadTokens": 20091316235,
-    "totalCost": 21860.12681315501
+    "totalTokens": 21248868058,
+    "inputTokens": 507420726,
+    "outputTokens": 91324124,
+    "cacheCreationTokens": 320261285,
+    "cacheReadTokens": 20338087667,
+    "totalCost": 21951.09632263501
   },
   "daily": [
     {
@@ -7481,21 +7481,21 @@
     },
     {
       "period": "2026-10-27",
-      "totalTokens": 19788749,
-      "inputTokens": 393714,
-      "outputTokens": 64731,
-      "cacheCreationTokens": 0,
-      "cacheReadTokens": 19330304,
-      "totalCost": 4.7494458,
+      "totalTokens": 256183281,
+      "inputTokens": 3725671,
+      "outputTokens": 1096798,
+      "cacheCreationTokens": 1986844,
+      "cacheReadTokens": 249373968,
+      "totalCost": 85.79831008,
       "modelBreakdowns": [
         {
           "modelName": "gpt-6.1-sol",
-          "cost": 3.5795186,
+          "cost": 21.8776616,
           "totalTokens": 0,
-          "inputTokens": 261754,
-          "outputTokens": 57922,
+          "inputTokens": 2821944,
+          "outputTokens": 482266,
           "cacheCreationTokens": 0,
-          "cacheReadTokens": 18065536,
+          "cacheReadTokens": 82151680,
           "totalCost": 0
         },
         {
@@ -7506,6 +7506,87 @@
           "outputTokens": 6809,
           "cacheCreationTokens": 0,
           "cacheReadTokens": 1264768,
+          "totalCost": 0
+        },
+        {
+          "modelName": "claude-opus-5-5",
+          "cost": 59.5525178,
+          "totalTokens": 0,
+          "inputTokens": 1174,
+          "outputTokens": 588202,
+          "cacheCreationTokens": 1986844,
+          "cacheReadTokens": 160022544,
+          "totalCost": 0
+        },
+        {
+          "modelName": "gpt-6-astra",
+          "cost": 2.3052400000000004,
+          "totalTokens": 0,
+          "inputTokens": 208079,
+          "outputTokens": 329,
+          "cacheCreationTokens": 0,
+          "cacheReadTokens": 208000,
+          "totalCost": 0
+        },
+        {
+          "modelName": "gpt-6.1-terra",
+          "cost": 0.8793586,
+          "totalTokens": 0,
+          "inputTokens": 501966,
+          "outputTokens": 18603,
+          "cacheCreationTokens": 0,
+          "cacheReadTokens": 5687552,
+          "totalCost": 0
+        },
+        {
+          "modelName": "gpt-5.6-luna",
+          "cost": 0.01360488,
+          "totalTokens": 0,
+          "inputTokens": 60548,
+          "outputTokens": 589,
+          "cacheCreationTokens": 0,
+          "cacheReadTokens": 39424,
+          "totalCost": 0
+        }
+      ]
+    },
+    {
+      "period": "2026-10-28",
+      "totalTokens": 17438344,
+      "inputTokens": 155429,
+      "outputTokens": 119174,
+      "cacheCreationTokens": 435973,
+      "cacheReadTokens": 16727768,
+      "totalCost": 9.9206452,
+      "modelBreakdowns": [
+        {
+          "modelName": "claude-opus-5-5",
+          "cost": 8.612427199999999,
+          "totalTokens": 0,
+          "inputTokens": 230,
+          "outputTokens": 110104,
+          "cacheCreationTokens": 435973,
+          "cacheReadTokens": 14608216,
+          "totalCost": 0
+        },
+        {
+          "modelName": "gpt-5.6-sol",
+          "cost": 1.0897344,
+          "totalTokens": 0,
+          "inputTokens": 90921,
+          "outputTokens": 6243,
+          "cacheCreationTokens": 0,
+          "cacheReadTokens": 1502976,
+          "totalCost": 0
+        },
+        {
+          "modelName": "gpt-6.1-sol",
+          "cost": 0.2184836,
+          "totalTokens": 0,
+          "inputTokens": 64278,
+          "outputTokens": 2827,
+          "cacheCreationTokens": 0,
+          "cacheReadTokens": 616576,
           "totalCost": 0
         }
       ]
@@ -7598,7 +7679,8 @@
       "2026-10-24": 13.33091748,
       "2026-10-25": 18.414393840000002,
       "2026-10-26": 12.3049958,
-      "2026-10-27": 4.7494458
+      "2026-10-27": 26.24579228,
+      "2026-10-28": 1.308218
     },
     "Gemini": {},
     "Copilot": {}
